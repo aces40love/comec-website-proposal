@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership | COMEC | Commission on Missing &amp; Exploited Children</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        body {
+            background-color: #ffffff;
+            color: #1e2937;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .blue-accent { color: #0033a0; }
+        .nav-link { color: #334155; }
+        .nav-link:hover { color: #0033a0; }
+        .nav-link-active { color: #0033a0; font-weight: 600; border-bottom: 2px solid #0033a0; }
+        .section-bg { background-color: #f8fafc; }
+        .leadership-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .leadership-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .bio-text {
+            text-align: left;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="border-b border-slate-200 bg-white py-6 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-8 flex items-center justify-between">
+            <a href="index.html">
+                <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC Logo" class="h-24 w-auto object-contain">
+            </a>
+            <div class="flex items-center gap-10 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link">Information</a>
+                <a href="index.html" class="nav-link">Resources</a>
+                <a href="index.html" class="nav-link">Events</a>
+                <a href="Leadership.html" class="nav-link-active">Leadership</a>
+                <a href="index.html" class="nav-link">News</a>
+            </div>
+            <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                    class="ml-12 bg-[#0033a0] text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-[#002b7a] transition-all flex items-center gap-2">
+                <i class="fas fa-heart"></i>
+                DONATE
+            </button>
+        </div>
+    </header>
+
+    <!-- Leadership Hero -->
+    <section class="bg-[#0033a0] py-24 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-8 py-3 rounded-3xl mb-8 border border-white/20">
+                <i class="fas fa-users"></i>
+                GUIDING OUR MISSION
+            </div>
+            <h1 class="text-6xl font-light leading-[1.05] tracking-tighter text-white">
+                Our Leadership Team
+            </h1>
+            <p class="mt-8 text-xl text-white/90 max-w-2xl mx-auto">
+                Dedicated professionals committed to supporting families, protecting children, and raising awareness across Tennessee.
+            </p>
+            <a href="#team"
+               class="mt-12 inline-flex items-center gap-3 bg-white text-[#0033a0] px-10 py-4 rounded-3xl font-semibold hover:bg-slate-100 transition-all">
+                Meet Our Leaders
+                <span class="text-xl">↓</span>
+            </a>
+        </div>
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:40px_40px] opacity-40"></div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section id="team" class="max-w-6xl mx-auto px-8 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-semibold blue-accent mb-4">New Leadership Announcement</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">As announced in the official COMEC Press Release, we are pleased to welcome our new Executive Director and President of the Board of Directors.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Greg Bethel Card -->
+            <div class="leadership-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="flex flex-col items-center mb-8">
+                    <img src="../Documents/Greg%20Bethel.jpg" alt="Gregory Bethel"
+                         class="w-48 h-48 mx-auto mb-8 object-cover rounded-3xl shadow-md ring-4 ring-slate-100">
+                    <h3 class="font-semibold text-3xl blue-accent">Gregory Bethel</h3>
+                    <p class="text-[#0033a0] text-xl mt-1 font-medium">Executive Director</p>
+                </div>
+
+                <div class="bio-text text-slate-600 space-y-6">
+                    <p>Gregory Bethel has been appointed as the new Executive Director of COMEC — The Commission on Missing and Exploited Children. A dynamic leader with more than 20 years of experience, Greg brings a proven track record in corporate leadership, executive training, stakeholder engagement, and community outreach.</p>
+
+                    <p>Greg was elected to his position after Len K. Edwards retired from the position in April 2025, after 25 years of service. As COMEC's longest-tenured board member and a former Vice President, Greg steps into this role with both purpose and passion.</p>
+
+                    <p>In his current role as HRBP Manager for the City of Memphis, he has developed a strong understanding of the community. His previous experience as Director of Human Resources for a large school district and Store Operations Manager has prepared him well.</p>
+
+                    <p>Looking ahead, Greg is focused on advancing COMEC's mission through strategic fundraising, enhanced donor relations, deeper stakeholder engagement, and building impactful partnerships for long-term success.</p>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-slate-100 text-center">
+                    <p class="text-xs uppercase tracking-widest text-slate-400">Appointed 2025 • Dedicated to child advocacy and community leadership</p>
+                </div>
+            </div>
+
+            <!-- Philip Boals Card -->
+            <div class="leadership-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="flex flex-col items-center mb-8">
+                    <img src="../Documents/Philip%20Boals%20Picture.jpeg" alt="Philip Boals"
+                         class="w-48 h-48 mx-auto mb-8 object-cover rounded-3xl shadow-md ring-4 ring-slate-100">
+                    <h3 class="font-semibold text-3xl blue-accent">Philip Boals</h3>
+                    <p class="text-[#0033a0] text-xl mt-1 font-medium">President of the Board</p>
+                </div>
+
+                <div class="bio-text text-slate-600 space-y-6">
+                    <p>Philip Boals has been elected President of the Board of Directors for COMEC. He brings nearly three decades of professional experience in real estate valuation, banking, finance, land surveying, development consulting, and organizational leadership.</p>
+
+                    <p>Throughout his career, Philip has built a reputation for thoughtful decision making, practical problem solving, and a steady leadership style grounded in accountability, sound judgment, and clear communication.</p>
+
+                    <p>His professional background includes commercial real estate valuation, collateral review, asset management, regulatory compliance, and the development of internal policies and procedures. He has contributed to strategic planning and operational improvement projects.</p>
+
+                    <p>As President, Philip is focused on strengthening COMEC's public presence, expanding community partnerships, improving fundraising efforts, and ensuring the organization's long-term sustainability. He is committed to working with leadership, board members, and partners to support the vital mission of advocacy, prevention, and family support.</p>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-slate-100 text-center">
+                    <p class="text-xs uppercase tracking-widest text-slate-400">Elected 2025 • Real estate professional and nonprofit leader</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 bg-slate-50 border border-slate-100 rounded-3xl p-10 text-center">
+            <h4 class="font-semibold text-lg mb-4 blue-accent">About the Transition</h4>
+            <p class="text-slate-600 max-w-2xl mx-auto">
+                These leadership changes follow the retirement of long-time Executive Director Len K. Edwards. The Commission is grateful for his 25 years of dedicated service and looks forward to this new chapter under the guidance of Greg Bethel and Philip Boals.
+            </p>
+            <a href="../Documents/COMEC%20Press%20Release%20Doc.pdf"
+               target="_blank"
+               class="inline-flex items-center gap-2 mt-8 text-blue-600 hover:text-blue-700 font-medium">
+                <i class="fas fa-download"></i>
+                Download Full Press Release (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- Ways to Support -->
+    <section class="bg-[#0033a0] text-white py-16">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <p class="text-2xl font-light">"Every child deserves to be found. Every family deserves support."</p>
+            <div class="mt-8 text-blue-200 text-sm tracking-widest">— COMEC MISSION STATEMENT</div>
+
+            <div class="mt-12 max-w-md mx-auto">
+                <p class="text-blue-100 mb-6">Ways to Support Our Mission</p>
+                <div class="bg-white/10 backdrop-blur rounded-3xl p-8 text-left space-y-4 text-sm">
+                    <div class="flex gap-4">
+                        <span class="text-blue-200 font-mono">01</span>
+                        <div>Donate via PayPal, Venmo, or debit/credit card</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-blue-200 font-mono">02</span>
+                        <div>Mail checks to: COMEC, 616 Adams Avenue, Room 102, Memphis, TN 38105</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-blue-200 font-mono">03</span>
+                        <div>Enroll in Kroger Community Rewards</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-blue-200 font-mono">04</span>
+                        <div>Attend the 31st Annual Charity Golf Tournament - Sept. 12, 2026</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <p class="text-blue-100 mb-4">Scan to Donate via PayPal</p>
+                <div class="inline-block p-4 bg-white rounded-2xl shadow-inner">
+                    <img src="../Documents/Paypal%20QR%20Code%20for%20Donation.png" alt="PayPal QR Code for COMEC Donations" class="w-48 h-48 object-contain mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <section id="donate" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[100]">
+        <div class="bg-white max-w-md w-full mx-4 rounded-3xl p-10 text-center shadow-2xl">
+            <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC" class="mx-auto h-12 mb-6 opacity-80">
+            <h2 class="text-3xl font-semibold text-slate-900 mb-3">Support COMEC</h2>
+            <p class="text-slate-600 mb-8">Your donation funds prevention programs, family support services, and community education across Tennessee.</p>
+
+            <div class="grid grid-cols-3 gap-3 mb-8">
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$25</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-blue-600 bg-blue-50 py-6 rounded-2xl text-blue-700 font-semibold transition-all">$50</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$100</button>
+            </div>
+
+            <button onclick="window.open('https://www.paypal.com/donate/?hosted_button_id=W2UWSR3RPZLNS&source=qr', '_blank'); document.getElementById('donate').classList.add('hidden')"
+                    class="w-full py-5 bg-[#0033a0] hover:bg-[#002b7a] text-white rounded-3xl font-semibold text-lg transition-colors">
+                DONATE VIA PAYPAL
+            </button>
+            <div onclick="document.getElementById('donate').classList.add('hidden')"
+                 class="mt-8 text-xs text-slate-400 cursor-pointer hover:text-slate-500">CLOSE WINDOW</div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-16 text-center text-sm text-slate-500 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-8">
+            Commission on Missing &amp; Exploited Children • Memphis, Tennessee<br>
+            (901) 222-0700 • comec@comec.org • <a href="https://www.comec.org" class="hover:text-blue-600">www.comec.org</a><br><br>
+            <a href="index.html" class="text-blue-600 hover:underline">← Return to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        function selectAmount(el) {
+            document.querySelectorAll('.donate-btn').forEach(btn => {
+                btn.classList.remove('border-blue-600', 'bg-blue-50');
+                btn.classList.add('border-slate-200');
+            });
+            el.classList.add('border-blue-600', 'bg-blue-50');
+        }
+
+        function makeDonation() {
+            window.open('https://www.paypal.com/donate/?hosted_button_id=W2UWSR3RPZLNS&source=qr', '_blank');
+            document.getElementById('donate').classList.add('hidden');
+        }
+
+        // Tailwind script
+        tailwind.config = { content: [], theme: { extend: {} } }
+
+        console.log('%cCOMEC Leadership page created. Navigation updated. Bios sourced from official press release. Full responsive design matching site aesthetic.', 'color:#0033a0; font-family:monospace');
+    </script>
+</body>
+</html>

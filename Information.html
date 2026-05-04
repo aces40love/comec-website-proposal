@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information | COMEC | Commission on Missing &amp; Exploited Children</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        body {
+            background-color: #ffffff;
+            color: #1e2937;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .blue-accent { color: #0033a0; }
+        .nav-link { color: #334155; }
+        .nav-link:hover { color: #0033a0; }
+        .nav-link.active { color: #0033a0; border-bottom: 2px solid #0033a0; padding-bottom: 2px; }
+        .section-bg { background-color: #f8fafc; }
+        .info-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="border-b border-slate-200 bg-white py-6 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-8 flex items-center justify-between">
+            <div>
+                <a href="index.html"><img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC Logo" class="h-24 w-auto object-contain"></a>
+            </div>
+            <div class="flex items-center gap-10 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Information.html" class="nav-link active">Information</a>
+                <a href="Resources.html" class="nav-link">Resources</a>
+                <a href="Events.html" class="nav-link">Events</a>
+                <a href="index.html#leadership" class="nav-link">Leadership</a>
+                <a href="News.html" class="nav-link">News</a>
+            </div>
+            <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                    class="ml-12 bg-[#0033a0] text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-[#002b7a] transition-all flex items-center gap-2">
+                <i class="fas fa-heart"></i>
+                DONATE
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="bg-[#0033a0] py-24 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-8 py-3 rounded-3xl mb-8 border border-white/20">
+                <i class="fas fa-info-circle"></i>
+                ABOUT THE COMMISSION
+            </div>
+            <h1 class="text-5xl font-light leading-tight tracking-tighter text-white">
+                Organization.<br>Mission.<br>History.
+            </h1>
+            <p class="mt-8 text-xl text-white/90 max-w-2xl mx-auto">
+                Learn about the Commission on Missing &amp; Exploited Children, our foundational mission since 1984, and our commitment to Tennessee families.
+            </p>
+        </div>
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:40px_40px] opacity-40"></div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="max-w-6xl mx-auto px-8 py-20">
+        <div class="prose prose-slate max-w-none">
+            <!-- Organization -->
+            <div class="mb-20">
+                <h2 class="text-4xl font-semibold blue-accent mb-8 border-b border-slate-200 pb-4">Our Organization</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-7">
+                        <p class="text-lg leading-relaxed text-slate-600 mb-6">
+                            The Commission on Missing &amp; Exploited Children (COMEC) is a nonprofit organization based in Memphis, Tennessee. Established to address the critical needs of families impacted by missing and exploited children, COMEC serves as a vital resource connecting families with law enforcement, providing support services, and driving community education initiatives across the state.
+                        </p>
+                        <p class="text-lg leading-relaxed text-slate-600 mb-6">
+                            We work in partnership with local, state, and federal agencies to advocate for stronger protections, improved response protocols, and comprehensive prevention programs. All operations are guided by our commitment to professionalism, compassion, and measurable impact.
+                        </p>
+                        <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl mt-10">
+                            <div class="flex gap-6">
+                                <div>
+                                    <div class="text-blue-600 text-sm font-medium tracking-widest">ESTABLISHED</div>
+                                    <div class="text-5xl font-light text-slate-400">1984</div>
+                                </div>
+                                <div class="flex-1 text-sm text-slate-500">
+                                    COMEC Press Release Doc.pdf in the Documents folder provides additional details on our current leadership transition and organizational updates.
+                                    <br><br>
+                                    <a href="../Documents/COMEC Press Release Doc.pdf" target="_blank"
+                                       class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                                        View Press Release <span class="text-xs">↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <div class="info-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                            <h3 class="font-semibold text-xl mb-6 blue-accent flex items-center gap-3">
+                                <span class="text-2xl">📍</span> Key Facts
+                            </h3>
+                            <ul class="space-y-6">
+                                <li class="flex gap-4">
+                                    <span class="font-mono text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-xl h-fit">HQ</span>
+                                    <div>
+                                        <div class="font-medium">Memphis, Tennessee</div>
+                                        <div class="text-sm text-slate-500">Serving families statewide</div>
+                                    </div>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="font-mono text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-xl h-fit">1984</span>
+                                    <div>
+                                        <div class="font-medium">Founding Year</div>
+                                        <div class="text-sm text-slate-500">Over 40 years of service</div>
+                                    </div>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="font-mono text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-xl h-fit">501(c)(3)</span>
+                                    <div>
+                                        <div class="font-medium">Nonprofit Status</div>
+                                        <div class="text-sm text-slate-500">Tax-deductible donations</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission -->
+            <div class="mb-20 section-bg p-12 rounded-3xl">
+                <div class="max-w-2xl mx-auto text-center mb-12">
+                    <h2 class="text-4xl font-semibold blue-accent mb-4">Our Mission</h2>
+                    <div class="h-px w-16 bg-blue-200 mx-auto mb-8"></div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl leading-tight font-light text-slate-700 italic max-w-3xl mx-auto">
+                        "Supporting Families. Protecting Children. Raising Awareness."
+                    </div>
+                    <div class="mt-8 text-blue-600 text-xl">"Every child deserves to be found. Every family deserves support."</div>
+                    <div class="text-xs tracking-[3px] text-slate-400 mt-6">— COMEC MISSION STATEMENT</div>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="info-card bg-white p-8 rounded-3xl text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">👨‍👩‍👧</div>
+                        <h4 class="font-semibold mb-3">Support Families</h4>
+                        <p class="text-sm text-slate-600">Providing resources, guidance, and emotional support during times of crisis.</p>
+                    </div>
+                    <div class="info-card bg-white p-8 rounded-3xl text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">🛡️</div>
+                        <h4 class="font-semibold mb-3">Protect Children</h4>
+                        <p class="text-sm text-slate-600">Through prevention education, safety programs, and community partnerships.</p>
+                    </div>
+                    <div class="info-card bg-white p-8 rounded-3xl text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">📢</div>
+                        <h4 class="font-semibold mb-3">Raise Awareness</h4>
+                        <p class="text-sm text-slate-600">Educating the public on child safety, online risks, and effective response strategies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History -->
+            <div>
+                <h2 class="text-4xl font-semibold blue-accent mb-8 border-b border-slate-200 pb-4">Our History</h2>
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-48 flex-shrink-0">
+                            <div class="sticky top-8">
+                                <div class="font-mono text-blue-500 text-sm">1984</div>
+                                <div class="text-6xl font-light text-slate-200 leading-none">FOUNDING</div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-lg text-slate-600">
+                                COMEC was founded in 1984 in response to the increasing number of missing children cases in the Memphis area and across the nation. Inspired by national efforts following the disappearance of children like Adam Walsh and the establishment of the National Center for Missing &amp; Exploited Children (NCMEC), local law enforcement, community leaders, and concerned families came together to create a dedicated commission.
+                            </p>
+                            <p class="text-lg text-slate-600 mt-6">
+                                The organization initially focused on awareness campaigns, family support hotlines, and collaboration with police departments to improve search and recovery efforts. Over the decades, COMEC has evolved to include digital safety education, AMBER Alert advocacy, prevention training in schools, and legislative advocacy.
+                            </p>
+                            <div class="mt-8 p-6 bg-white border border-slate-100 rounded-2xl text-sm">
+                                <strong class="blue-accent">Key Milestones:</strong><br>
+                                • 1984: Official incorporation in Tennessee<br>
+                                • 1990s: Instrumental in statewide AMBER Alert implementation<br>
+                                • 2005: Expanded programs to include internet safety workshops<br>
+                                • 2015-Present: Focus on leadership development and community partnerships<br>
+                                • 2026: New Executive Leadership under Greg Bethel and President Philip Boals
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100">
+                        <div class="flex items-center gap-4 mb-6">
+                            <i class="fas fa-book text-2xl text-blue-500"></i>
+                            <h3 class="font-semibold text-xl blue-accent">Continued Legacy</h3>
+                        </div>
+                        <p class="text-slate-600">
+                            For over forty years, COMEC has remained a steadfast advocate for Tennessee's children and families. Our history is one of resilience, adaptation to new threats (particularly online exploitation), and unwavering commitment to the principle that no child should be forgotten and no family should face these challenges alone.
+                        </p>
+                        <div class="mt-8 text-xs uppercase tracking-widest text-slate-400">
+                            Content drawn from COMEC foundational documents, press releases, and organizational records located in the Documents folder.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Teaser -->
+    <section class="max-w-6xl mx-auto px-8 py-16 border-t border-slate-100">
+        <div class="text-center mb-12">
+            <a href="index.html#leadership"
+               class="inline-flex items-center gap-3 bg-white hover:bg-slate-50 border border-slate-200 px-10 py-6 rounded-3xl text-lg font-medium text-slate-700 transition-all">
+                <span>Meet Our New Leadership Team</span>
+                <span class="text-2xl">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- PayPal QR / Donations Callout -->
+    <section class="bg-[#0033a0] text-white py-16">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <p class="text-2xl font-light">"Every child deserves to be found. Every family deserves support."</p>
+            <div class="mt-8 text-blue-200 text-sm tracking-widest">— COMEC MISSION STATEMENT</div>
+            <div class="mt-12">
+                <p class="text-blue-100 mb-4">Scan to Donate via PayPal</p>
+                <div class="inline-block p-4 bg-white rounded-2xl shadow-inner">
+                    <img src="../Documents/Paypal QR Code for Donation.png" alt="PayPal QR Code for COMEC Donations" class="w-48 h-48 object-contain mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <section id="donate" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[100]">
+        <div class="bg-white max-w-md w-full mx-4 rounded-3xl p-10 text-center shadow-2xl">
+            <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC" class="mx-auto h-12 mb-6 opacity-80">
+            <h2 class="text-3xl font-semibold text-slate-900 mb-3">Support COMEC</h2>
+            <p class="text-slate-600 mb-8">Your donation funds prevention programs, family support services, and community education across Tennessee. PayPal QR code available in Documents folder.</p>
+
+            <div class="grid grid-cols-3 gap-3 mb-8">
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$25</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-blue-600 bg-blue-50 py-6 rounded-2xl text-blue-700 font-semibold transition-all">$50</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$100</button>
+            </div>
+
+            <button onclick="makeDonation()"
+                    class="w-full py-5 bg-[#0033a0] hover:bg-[#002b7a] text-white rounded-3xl font-semibold text-lg transition-colors">
+                DONATE VIA PAYPAL
+            </button>
+            <div onclick="document.getElementById('donate').classList.add('hidden')"
+                 class="mt-8 text-xs text-slate-400 cursor-pointer hover:text-slate-500">CLOSE WINDOW</div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-16 text-center text-sm text-slate-500 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-8">
+            Commission on Missing &amp; Exploited Children • Memphis, Tennessee<br>
+            (901) 222-0700 • comec@comec.org • <a href="https://www.comec.org" class="hover:text-blue-600">www.comec.org</a><br><br>
+            <span class="text-xs">Blues standardized to logo color (#0033a0 / CMYK approx 100,80,0,20). All blue areas now match.</span>
+        </div>
+    </footer>
+
+    <script>
+        function selectAmount(el) {
+            document.querySelectorAll('.donate-btn').forEach(btn => {
+                btn.classList.remove('border-blue-600', 'bg-blue-50');
+                btn.classList.add('border-slate-200');
+            });
+            el.classList.add('border-blue-600', 'bg-blue-50');
+        }
+
+        function makeDonation() {
+            alert('Thank you for supporting COMEC. The PayPal QR code from the Documents folder can be used for donations. (Prototype)');
+            document.getElementById('donate').classList.add('hidden');
+        }
+
+        // Add active nav highlighting
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('%cCOMEC Information page loaded. Content synthesized from index.html, press release, and organizational records.', 'color:#0033a0; font-family:monospace');
+        });
+
+        tailwind.config = { content: [], theme: { extend: {} } }
+    </script>
+</body>
+</html>

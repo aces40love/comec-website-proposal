@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEC | News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        body {
+            background-color: #ffffff;
+            color: #1e2937;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .blue-accent { color: #0033a0; }
+        .nav-link { color: #334155; }
+        .nav-link:hover { color: #0033a0; }
+        .nav-link-active { color: #0033a0; font-weight: 600; }
+        .news-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .date-pill {
+            background-color: #0033a0;
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="border-b border-slate-200 bg-white py-6 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-8 flex items-center justify-between">
+            <div>
+                <a href="index.html">
+                    <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC Logo" class="h-24 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex items-center gap-10 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Resources.html" class="nav-link">Resources</a>
+                <a href="Events.html" class="nav-link">Events</a>
+                <a href="Leadership.html" class="nav-link">Leadership</a>
+                <a href="News.html" class="nav-link-active">News</a>
+            </div>
+            <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                    class="ml-12 bg-[#0033a0] text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-[#002b7a] transition-all flex items-center gap-2">
+                <i class="fas fa-heart"></i>
+                DONATE
+            </button>
+        </div>
+    </header>
+
+    <!-- News Hero -->
+    <section class="bg-[#0033a0] py-24 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-8 py-3 rounded-3xl mb-8 border border-white/20">
+                <i class="fas fa-newspaper"></i>
+                LATEST UPDATES
+            </div>
+            <h1 class="text-6xl font-light leading-[1.05] tracking-tighter text-white">
+                News &amp; Announcements
+            </h1>
+            <p class="mt-10 text-xl text-white/90 max-w-2xl mx-auto">
+                Stay informed with the latest COMEC news, press releases, event recaps, and organizational updates.
+            </p>
+        </div>
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:40px_40px] opacity-40"></div>
+    </section>
+
+    <!-- News Content -->
+    <section class="max-w-6xl mx-auto px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-8">
+                <div class="space-y-12">
+
+                    <!-- News Item 1 -->
+                    <div class="news-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="date-pill text-xs font-medium px-4 py-1.5 rounded-3xl">MAY 2026</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest text-slate-400 font-medium">Leadership</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 blue-accent">New Executive Director and President Announced</h3>
+                        <p class="text-slate-600 mb-8">
+                            COMEC is pleased to welcome Greg Bethel as our new Executive Director and Philip Boals as President. Their leadership will guide our continued mission to support families and raise awareness.
+                        </p>
+                        <a href="../Documents/COMEC Press Release, May 2026.pdf" target="_blank"
+                           class="inline-flex items-center gap-2 text-[#0033a0] font-medium hover:underline">
+                            Read Full Press Release <i class="fas fa-file-pdf ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- News Item 2 -->
+                    <div class="news-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="date-pill text-xs font-medium px-4 py-1.5 rounded-3xl">SEPTEMBER 2026</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest text-slate-400 font-medium">Event Announcement</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 blue-accent">30th Annual Charity Golf Tournament</h3>
+                        <p class="text-slate-600 mb-8">
+                            Join us at Links at Galloway for our signature fundraising event. Sponsorship opportunities available.
+                            All proceeds support family assistance programs, awareness campaigns, and prevention education.
+                        </p>
+                        <a href="Events.html"
+                           class="inline-flex items-center gap-2 text-[#0033a0] font-medium hover:underline">
+                            Learn more and register <span class="text-xl leading-none">→</span>
+                        </a>
+                    </div>
+
+                    <!-- News Item 3 -->
+                    <div class="news-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="date-pill text-xs font-medium px-4 py-1.5 rounded-3xl">DECEMBER 2026</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest text-slate-400 font-medium">Fundraising</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 blue-accent">COMEC Christmas Gala</h3>
+                        <p class="text-slate-600 mb-8">
+                            Our annual holiday gala brings together community leaders, supporters, and families.
+                            An evening of celebration, remembrance, and commitment to our mission. Details and ticket information coming soon.
+                        </p>
+                        <a href="../Documents/COMEC Press Release, May 2026.pdf"
+                           target="_blank"
+                           class="inline-flex items-center gap-2 text-[#0033a0] font-medium hover:underline">
+                            View Press Release <i class="fas fa-file-pdf ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- News Item 4 -->
+                    <div class="news-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="date-pill text-xs font-medium px-4 py-1.5 rounded-3xl">MAY 25, 2026</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest text-slate-400 font-medium">Awareness</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 blue-accent">International Missing Children's Day</h3>
+                        <p class="text-slate-600 mb-8">
+                            Wear yellow to raise awareness. COMEC will host community events, distribute safety guides, and partner with local organizations
+                            to highlight prevention strategies and support resources for families.
+                        </p>
+                        <div class="text-sm text-slate-500">Resources and toolkits will be available in our <a href="Resources.html" class="blue-accent hover:underline">Resources section</a>.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-4">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm sticky top-24">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="max-w-6xl mx-auto px-8 py-16 border-t border-slate-100">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-semibold blue-accent">Additional Documents &amp; Resources</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="../Documents/COMEC Press Release, May 2026.pdf" target="_blank"
+               class="group bg-white p-8 rounded-3xl border border-slate-100 hover:border-[#0033a0] transition-all flex flex-col">
+                <div class="text-4xl mb-6 text-amber-500"><i class="fas fa-file-pdf"></i></div>
+                <div class="font-medium group-hover:text-blue-700">COMEC Press Release, May 2026</div>
+                <div class="text-sm text-slate-500 mt-auto pt-8">Leadership transition announcement and organizational updates. Full 8-page document.</div>
+            </a>
+
+            <a href="../Documents/Paypal QR Code for Donation.png" target="_blank"
+               class="group bg-white p-8 rounded-3xl border border-slate-100 hover:border-[#0033a0] transition-all flex flex-col">
+                <div class="text-4xl mb-6 text-red-500"><i class="fas fa-qrcode"></i></div>
+                <div class="font-medium group-hover:text-blue-700">PayPal Donation QR Code</div>
+                <div class="text-sm text-slate-500 mt-auto pt-8">Scan or print for quick donations at events.</div>
+            </a>
+
+            <div onclick="window.location='index.html'"
+                 class="group bg-white p-8 rounded-3xl border border-slate-100 hover:border-[#0033a0] transition-all flex flex-col cursor-pointer">
+                <div class="text-4xl mb-6 text-blue-500"><i class="fas fa-info-circle"></i></div>
+                <div class="font-medium group-hover:text-blue-700">Return to Homepage</div>
+                <div class="text-sm text-slate-500 mt-auto pt-8">Access full resources, leadership profiles, events calendar, and donation information.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <section id="donate" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[100]">
+        <div class="bg-white max-w-md w-full mx-4 rounded-3xl p-10 text-center shadow-2xl">
+            <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC" class="mx-auto h-12 mb-6 opacity-80">
+            <h2 class="text-3xl font-semibold text-slate-900 mb-3">Support COMEC</h2>
+            <p class="text-slate-600 mb-8">Your donation funds prevention programs, family support services, and community education across Tennessee. PayPal QR code available in Documents folder.</p>
+
+            <div class="grid grid-cols-3 gap-3 mb-8">
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$25</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-blue-600 bg-blue-50 py-6 rounded-2xl text-blue-700 font-semibold transition-all">$50</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$100</button>
+            </div>
+
+            <button onclick="makeDonation()"
+                    class="w-full py-5 bg-[#0033a0] hover:bg-[#002b7a] text-white rounded-3xl font-semibold text-lg transition-colors">
+                DONATE VIA PAYPAL
+            </button>
+            <div onclick="document.getElementById('donate').classList.add('hidden')"
+                 class="mt-8 text-xs text-slate-400 cursor-pointer hover:text-slate-500">CLOSE WINDOW</div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-16 text-center text-sm text-slate-500 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-8">
+            Commission on Missing &amp; Exploited Children • Memphis, Tennessee<br>
+            (901) 222-0700 • comec@comec.org • <a href="https://www.comec.org" class="hover:text-blue-600">www.comec.org</a><br><br>
+            <span class="text-xs">News page updated: Stay Updated and Archives sections removed from sidebar. All other elements preserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        function selectAmount(el) {
+            document.querySelectorAll('.donate-btn').forEach(btn => {
+                btn.classList.remove('border-blue-600', 'bg-blue-50');
+                btn.classList.add('border-slate-200');
+            });
+            el.classList.add('border-blue-600', 'bg-blue-50');
+        }
+
+        function makeDonation() {
+            window.open('https://www.paypal.com/donate/?hosted_button_id=W2UWSR3RPZLNS&source=qr', '_blank');
+            document.getElementById('donate').classList.add('hidden');
+        }
+
+        // Tailwind script
+        tailwind.config = { content: [], theme: { extend: {} } }
+
+        console.log('%cNews.html updated: Stay Updated and Archives sections removed from sidebar. PayPal link integrated. Design consistent with site.', 'color:#0033a0; font-family:monospace');
+    </script>
+</body>
+</html>

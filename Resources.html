@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEC | Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        body {
+            background-color: #ffffff;
+            color: #1e2937;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .blue-accent { color: #0033a0; }
+        .nav-link { color: #334155; }
+        .nav-link:hover { color: #0033a0; }
+        .nav-link-active { color: #0033a0; font-weight: 600; }
+        .section-bg { background-color: #f8fafc; }
+        .resource-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .tip-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .tip-item:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #0033a0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="border-b border-slate-200 bg-white py-6 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-8 flex items-center justify-between">
+            <div>
+                <a href="index.html">
+                    <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC Logo" class="h-24 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex items-center gap-10 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Resources.html" class="nav-link-active">Resources</a>
+                <a href="Events.html" class="nav-link">Events</a>
+                <a href="Leadership.html" class="nav-link">Leadership</a>
+                <a href="News.html" class="nav-link">News</a>
+            </div>
+            <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                    class="ml-12 bg-[#0033a0] text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-[#002b7a] transition-all flex items-center gap-2">
+                <i class="fas fa-heart"></i>
+                DONATE
+            </button>
+        </div>
+    </header>
+
+    <!-- Resources Hero -->
+    <section class="bg-[#0033a0] py-24 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-8 py-3 rounded-3xl mb-8 border border-white/20">
+                <i class="fas fa-book-open"></i>
+                GUIDES &amp; RESOURCES
+            </div>
+            <h1 class="text-6xl font-light leading-[1.05] tracking-tighter text-white">
+                Protecting Our Children.<br>Empowering Communities.
+            </h1>
+            <p class="mt-10 text-xl text-white/90 max-w-2xl mx-auto">
+                Comprehensive guides on internet safety, runaway prevention, AMBER alerts,
+                and community awareness programs. All resources are free and developed for families in Tennessee and beyond.
+            </p>
+            <div class="mt-12 flex justify-center">
+                <a href="#guides"
+                   class="inline-flex items-center gap-3 bg-white text-[#0033a0] px-10 py-4 rounded-3xl font-semibold hover:bg-slate-100 transition-all">
+                    EXPLORE GUIDES
+                    <span class="text-2xl leading-none">↓</span>
+                </a>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:40px_40px] opacity-40"></div>
+    </section>
+
+    <!-- Main Resources Content -->
+    <section id="guides" class="max-w-6xl mx-auto px-8 py-20">
+        <div class="prose max-w-none">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Internet Safety -->
+                <div class="resource-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🛡️</div>
+                        <div>
+                            <h2 class="text-3xl font-semibold blue-accent">Internet Safety for Families</h2>
+                            <p class="text-slate-500">Practical steps to protect children online</p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2 blue-accent">
+                                <i class="fas fa-shield-alt"></i> Key Recommendations
+                            </h3>
+                            <ul class="space-y-4 text-slate-600">
+                                <li class="tip-item">Have open conversations about online risks with your children.</li>
+                                <li class="tip-item">Use parental control tools and privacy settings on all devices.</li>
+                                <li class="tip-item">Monitor app usage and establish clear family technology rules.</li>
+                                <li class="tip-item">Teach children to recognize grooming, phishing, and cyberbullying.</li>
+                                <li class="tip-item">Keep computers in common areas and set time limits for internet use.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Runaway Prevention -->
+                <div class="resource-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🏠</div>
+                        <div>
+                            <h2 class="text-3xl font-semibold blue-accent">Runaway Prevention &amp; Response</h2>
+                            <p class="text-slate-500">Strategies for families and communities</p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2 blue-accent">
+                                <i class="fas fa-exclamation-triangle"></i> Warning Signs
+                            </h3>
+                            <ul class="space-y-3 text-slate-600 text-sm">
+                                <li class="tip-item">Frequent arguments or withdrawal from family</li>
+                                <li class="tip-item">Declining school performance or truancy</li>
+                                <li class="tip-item">New friends with negative influence</li>
+                                <li class="tip-item">Signs of depression, anxiety, or substance use</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2 blue-accent">
+                                <i class="fas fa-phone"></i> What To Do
+                            </h3>
+                            <ul class="space-y-4 text-slate-600">
+                                <li class="tip-item">Contact the National Runaway Safeline: 1-800-RUNAWAY</li>
+                                <li class="tip-item">File a police report immediately — do not wait 24 hours</li>
+                                <li class="tip-item">Reach out to family, friends, and known associates</li>
+                                <li class="tip-item">Utilize COMEC support services for family mediation</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-slate-100 bg-slate-50 -mx-10 px-10 py-6 text-xs">
+                            <strong>Hotline:</strong> National Center for Missing &amp; Exploited Children: 1-800-THE-LOST (1-800-843-5678)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AMBER Alerts -->
+                <div class="resource-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🚨</div>
+                        <div>
+                            <h2 class="text-3xl font-semibold blue-accent">Understanding AMBER Alerts</h2>
+                            <p class="text-slate-500">How the system works and how to respond</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-600 space-y-6">
+                        <p>AMBER Alerts are emergency notifications issued when law enforcement determines that a child has been abducted and is in imminent danger. The acronym stands for America's Missing: Broadcast Emergency Response.</p>
+
+                        <div class="bg-amber-50 border border-amber-200 p-6 rounded-2xl">
+                            <h4 class="font-semibold mb-3 text-amber-800">Criteria for an AMBER Alert:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-sm">
+                                <li>Confirmed child abduction</li>
+                                <li>Child is 17 or younger</li>
+                                <li>Child is at risk of serious injury or death</li>
+                                <li>Enough descriptive information available to aid in recovery</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold mb-3 blue-accent">How to Respond to an AMBER Alert:</h4>
+                            <ol class="space-y-4 text-sm list-decimal pl-5">
+                                <li class="tip-item">Look at the description of the child, abductor, and vehicle</li>
+                                <li class="tip-item">If you see something, call 911 immediately — do not approach</li>
+                                <li class="tip-item">Share the alert through social media responsibly</li>
+                                <li class="tip-item">Remain vigilant until the child is recovered</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awareness Programs -->
+                <div class="resource-card bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">📢</div>
+                        <div>
+                            <h2 class="text-3xl font-semibold blue-accent">Community Awareness Programs</h2>
+                            <p class="text-slate-500">Training and education resources</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 text-slate-600">
+                        <p>COMEC offers various programs to raise awareness and train community members, educators, law enforcement, and families on issues related to missing and exploited children.</p>
+
+                        <ul class="space-y-4">
+                            <li class="flex gap-3">
+                                <span class="font-mono text-emerald-500 text-xs bg-emerald-100 px-2.5 py-1 rounded h-fit mt-0.5">01</span>
+                                <div>School-based safety assemblies and curriculum</div>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="font-mono text-emerald-500 text-xs bg-emerald-100 px-2.5 py-1 rounded h-fit mt-0.5">02</span>
+                                <div>Community workshops on prevention strategies</div>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="font-mono text-emerald-500 text-xs bg-emerald-100 px-2.5 py-1 rounded h-fit mt-0.5">03</span>
+                                <div>Partner training with local law enforcement</div>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="font-mono text-emerald-500 text-xs bg-emerald-100 px-2.5 py-1 rounded h-fit mt-0.5">04</span>
+                                <div>Annual events including International Missing Children's Day (May 25)</div>
+                            </li>
+                        </ul>
+
+                        <div class="pt-8">
+                            <a href="mailto:chrystalmbaker@gmail.com"
+                               class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-2xl text-sm font-medium hover:bg-emerald-700">
+                                CONTACT COMEC FOR MORE INFORMATION
+                                <span class="ml-3 text-lg">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-[#0033a0] text-white py-16">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <p class="text-2xl font-light">"Every child deserves to be found. Every family deserves support."</p>
+            <div class="mt-8 text-blue-200 text-sm tracking-widest">— COMEC MISSION STATEMENT</div>
+            <div class="mt-12">
+                <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                        class="bg-white text-[#0033a0] px-12 py-6 rounded-3xl text-lg font-semibold hover:bg-white transition-all inline-flex items-center gap-3">
+                    SUPPORT OUR WORK
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Modal (same as index) -->
+    <section id="donate" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[100]">
+        <div class="bg-white max-w-md w-full mx-4 rounded-3xl p-10 text-center shadow-2xl">
+            <a href="index.html">
+                <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC" class="mx-auto h-12 mb-6 opacity-80">
+            </a>
+            <h2 class="text-3xl font-semibold text-slate-900 mb-3">Support COMEC</h2>
+            <p class="text-slate-600 mb-8">Your donation funds prevention programs, family support services, and community education across Tennessee. PayPal QR code available in Documents folder.</p>
+
+            <div class="grid grid-cols-3 gap-3 mb-8">
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$25</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-blue-600 bg-blue-50 py-6 rounded-2xl text-blue-700 font-semibold transition-all">$50</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$100</button>
+            </div>
+
+            <button onclick="makeDonation()"
+                    class="w-full py-5 bg-[#0033a0] hover:bg-[#002b7a] text-white rounded-3xl font-semibold text-lg transition-colors">
+                DONATE VIA PAYPAL
+            </button>
+            <div onclick="document.getElementById('donate').classList.add('hidden')"
+                 class="mt-8 text-xs text-slate-400 cursor-pointer hover:text-slate-500">CLOSE WINDOW</div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-16 text-center text-sm text-slate-500 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-8">
+            Commission on Missing &amp; Exploited Children • Memphis, Tennessee<br>
+            (901) 222-0700 • comec@comec.org • <a href="https://www.comec.org" class="hover:text-blue-600">www.comec.org</a><br><br>
+            <span class="text-xs">Resources page updated per instructions: contact text and link changed, "Coming Soon" section removed, "PDF Guide" renamed to "Press Release", "DONATION" renamed to "QR Code". Additional resources section moved to News page.</span>
+        </div>
+    </footer>
+
+    <script>
+        function selectAmount(el) {
+            document.querySelectorAll('.donate-btn').forEach(btn => {
+                btn.classList.remove('border-blue-600', 'bg-blue-50');
+                btn.classList.add('border-slate-200');
+            });
+            el.classList.add('border-blue-600', 'bg-blue-50');
+        }
+
+        function makeDonation() {
+            window.open('https://www.paypal.com/donate/?hosted_button_id=W2UWSR3RPZLNS&source=qr', '_blank');
+            document.getElementById('donate').classList.add('hidden');
+        }
+
+        // Tailwind script
+        tailwind.config = { content: [], theme: { extend: {} } }
+
+        console.log('%cResources.html updated: Contact text changed to mailto link, Coming Soon section removed, headers renamed, additional resources moved to News page.', 'color:#0033a0; font-family:monospace');
+    </script>
+</body>
+</html>

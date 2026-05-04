@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEC | Commission on Missing &amp; Exploited Children</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .nav-link.active { color: #0033a0; font-weight: 600; border-bottom: 2px solid #0033a0; padding-bottom: 2px; }
+        html { scroll-behavior: smooth; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        body {
+            background-color: #ffffff;
+            color: #1e2937;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .blue-accent { color: #0033a0; }
+        .nav-link { color: #334155; }
+        .nav-link:hover { color: #0033a0; }
+        .section-bg { background-color: #f8fafc; }
+        .leadership-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .leadership-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="border-b border-slate-200 bg-white py-6 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-8 flex items-center justify-between">
+            <div>
+                <a href="index.html"><img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC Logo" class="h-24 w-auto object-contain"></a>
+            </div>
+            <div class="flex items-center gap-10 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="Resources.html" class="nav-link">Resources</a>
+                <a href="Events.html" class="nav-link">Events</a>
+                <a href="Leadership.html" class="nav-link">Leadership</a>
+                <a href="News.html" class="nav-link">News</a>
+            </div>
+            <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                    class="ml-12 bg-[#0033a0] text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-[#002b7a] transition-all flex items-center gap-2">
+                <i class="fas fa-heart"></i>
+                DONATE
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-[#0033a0] py-32 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-8 py-3 rounded-3xl mb-8 border border-white/20">
+                <i class="fas fa-map-marker-alt"></i>
+                EST. 1984 • MEMPHIS, TENNESSEE
+            </div>
+            <h1 class="text-6xl font-light leading-[1.05] tracking-tighter text-white">
+                Supporting Families.<br>Protecting Children.<br>Raising Awareness.
+            </h1>
+            <p class="mt-10 text-xl text-white/90 max-w-2xl mx-auto">
+                The Commission on Missing &amp; Exploited Children provides critical information,
+                resources, and support to families and communities affected by missing and exploited children.
+            </p>
+
+            <div class="mt-16 flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('donate').classList.remove('hidden')"
+                        class="bg-white text-[#0033a0] px-12 py-6 rounded-3xl text-lg font-semibold hover:bg-white transition-all flex items-center justify-center gap-3 shadow-2xl">
+                    DONATE TO OUR MISSION
+                    <span class="text-xl">→</span>
+                </button>
+                <a href="Leadership.html"
+                   class="border-2 border-white/60 hover:border-white text-white px-12 py-6 rounded-3xl text-lg font-medium transition-all">Meet Our Leadership →</a>
+            </div>
+        </div>
+        <!-- Subtle pattern overlay -->
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:40px_40px] opacity-40"></div>
+    </section>
+
+    <!-- Key Info & Resources -->
+    <section class="max-w-6xl mx-auto px-8 py-20 section-bg">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Resources -->
+            <div class="bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl">📘</div>
+                    <h3 class="text-2xl font-semibold blue-accent">Resources &amp; Guides</h3>
+                </div>
+                <ul class="space-y-6 text-slate-600">
+                    <li class="flex items-start gap-4 group">
+                        <span class="font-mono text-blue-500 font-medium text-sm mt-1">01</span>
+                        <div>
+                            <div class="font-medium text-slate-800 group-hover:text-blue-700">Internet Safety for Families</div>
+                            <div class="text-sm mt-1">Practical steps to protect children online.</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4 group">
+                        <span class="font-mono text-blue-500 font-medium text-sm mt-1">02</span>
+                        <div>
+                            <div class="font-medium text-slate-800 group-hover:text-blue-700">Runaway Prevention &amp; Response</div>
+                            <div class="text-sm mt-1">Strategies for families and communities.</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4 group">
+                        <span class="font-mono text-blue-500 font-medium text-sm mt-1">03</span>
+                        <div>
+                            <div class="font-medium text-slate-800 group-hover:text-blue-700">Understanding AMBER Alerts</div>
+                            <div class="text-sm mt-1">How the system works and how to respond.</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4 group">
+                        <span class="font-mono text-blue-500 font-medium text-sm mt-1">04</span>
+                        <div>
+                            <div class="font-medium text-slate-800 group-hover:text-blue-700">Community Awareness Programs</div>
+                            <div class="text-sm mt-1">Training and education resources.</div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="Resources.html" class="mt-10 block w-full py-4 border border-blue-200 text-blue-700 rounded-2xl hover:bg-blue-50 font-medium text-center">Browse All Resources →</a>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="bg-white p-10 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl">📅</div>
+                    <h3 class="text-2xl font-semibold blue-accent">Upcoming Events</h3>
+                </div>
+                <div class="space-y-8">
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <div class="text-blue-600 text-sm font-medium">SEPTEMBER 13, 2026</div>
+                        <div class="font-semibold text-lg mt-1">30th Annual Charity Golf Tournament</div>
+                        <div class="text-slate-500 text-sm">Links at Galloway • Sponsorship opportunities available</div>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <div class="text-blue-600 text-sm font-medium">DECEMBER 2026</div>
+                        <div class="font-semibold text-lg mt-1">COMEC Christmas Gala</div>
+                        <div class="text-slate-500 text-sm">Annual fundraising gala — details in press release</div>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <div class="text-blue-600 text-sm font-medium">MAY 25, 2026</div>
+                        <div class="font-semibold text-lg mt-1">International Missing Children's Day</div>
+                        <div class="text-slate-500 text-sm">Wear yellow • Raise awareness in your community</div>
+                    </div>
+                </div>
+                <button onclick="window.location='#events'"
+                        class="mt-10 w-full py-4 border border-blue-200 text-blue-700 rounded-2xl hover:bg-blue-50 font-medium">View Full Calendar →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="max-w-6xl mx-auto px-8 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-semibold blue-accent mb-3">New Leadership</h2>
+            <p class="text-slate-600 max-w-md mx-auto">The Commission is pleased to announce its new Executive Director and President, as detailed in the official press release.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="leadership-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm text-center">
+                <img src="../Documents/Greg Bethel.jpg" alt="Greg Bethel" class="w-32 h-32 mx-auto mb-6 object-cover rounded-2xl shadow-md">
+                <h4 class="font-semibold text-xl">Executive Director</h4>
+                <p class="text-blue-600 mt-1">Greg Bethel</p>
+                <p class="text-xs text-slate-500 mt-6">New Executive Director</p>
+            </div>
+            <div class="leadership-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm text-center">
+                <img src="../Documents/Philip%20Boals%20Picture.jpeg" alt="Philip Boals" class="w-32 h-32 mx-auto mb-6 object-cover rounded-2xl shadow-md">
+                <h4 class="font-semibold text-xl">President</h4>
+                <p class="text-blue-600 mt-1">Philip Boals</p>
+                <p class="text-xs text-slate-500 mt-6">New President</p>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-sm text-slate-500">
+            Full bios and leadership details available on the dedicated <a href="Leadership.html" class="text-blue-600 hover:underline">Leadership page</a>. Official announcement in <a href="../Documents/COMEC Press Release Doc.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">COMEC Press Release Doc.pdf</a>.
+        </div>
+    </section>
+
+    <!-- PayPal QR / Donations Callout -->
+    <section class="bg-[#0033a0] text-white py-16">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <p class="text-2xl font-light">"Every child deserves to be found. Every family deserves support."</p>
+            <div class="mt-8 text-blue-200 text-sm tracking-widest">— COMEC MISSION STATEMENT</div>
+            <div class="mt-12">
+                <p class="text-blue-100 mb-4">Scan to Donate via PayPal</p>
+                <div class="inline-block p-4 bg-white rounded-2xl shadow-inner">
+                    <img src="../Documents/Paypal%20QR%20Code%20for%20Donation.png" alt="PayPal QR Code for COMEC Donations" class="w-48 h-48 object-contain mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <section id="donate" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[100]">
+        <div class="bg-white max-w-md w-full mx-4 rounded-3xl p-10 text-center shadow-2xl">
+            <img src="../Logos/cropped-cropped-cropped-MCG-Logo-COMEC-1.jpg" alt="COMEC" class="mx-auto h-12 mb-6 opacity-80">
+            <h2 class="text-3xl font-semibold text-slate-900 mb-3">Support COMEC</h2>
+            <p class="text-slate-600 mb-8">Your donation funds prevention programs, family support services, and community education across Tennessee. PayPal QR code available in Documents folder.</p>
+
+            <div class="grid grid-cols-3 gap-3 mb-8">
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$25</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-blue-600 bg-blue-50 py-6 rounded-2xl text-blue-700 font-semibold transition-all">$50</button>
+                <button onclick="selectAmount(this)" class="donate-btn border-2 border-slate-200 hover:border-blue-200 py-6 rounded-2xl text-slate-700 font-semibold transition-all">$100</button>
+            </div>
+
+            <button onclick="makeDonation()"
+                    class="w-full py-5 bg-[#0033a0] hover:bg-[#002b7a] text-white rounded-3xl font-semibold text-lg transition-colors">
+                DONATE VIA PAYPAL
+            </button>
+            <div onclick="document.getElementById('donate').classList.add('hidden')"
+                 class="mt-8 text-xs text-slate-400 cursor-pointer hover:text-slate-500">CLOSE WINDOW</div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-16 text-center text-sm text-slate-500 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-8">
+            Commission on Missing &amp; Exploited Children • Memphis, Tennessee<br>
+            (901) 222-0700 •  <a href="mailto:comec@comec.org" class="hover:text-blue-600">comec@comec.org</a> • <a href="https://www.comec.org" target="_blank" rel="noopener" class="hover:text-blue-600">www.comec.org</a><br><br>
+            <span class="text-xs">Blues standardized to logo color (#0033a0 / CMYK approx 100,80,0,20). All blue areas now match.</span>
+        </div>
+    </footer>
+
+    <script>
+        function selectAmount(el) {
+            document.querySelectorAll('.donate-btn').forEach(btn => {
+                btn.classList.remove('border-blue-600', 'bg-blue-50');
+                btn.classList.add('border-slate-200');
+            });
+            el.classList.add('border-blue-600', 'bg-blue-50');
+        }
+
+        function makeDonation() {
+            window.open('https://www.paypal.com/donate/?hosted_button_id=W2UWSR3RPZLNS&source=qr', '_blank');
+            document.getElementById('donate').classList.add('hidden');
+        }
+
+        console.log('%cCOMEC website updated: Logo blue color (#0033a0, CMYK ~100,80,0,20) applied consistently to hero, buttons, accents, and all blue areas.', 'color:#0033a0; font-family:monospace');
+
+        tailwind.config = { content: [], theme: { extend: {} } }
+    </script>
+</body>
+</html>
